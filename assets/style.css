@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    padding: 1rem;  
+}
+
+/* spacing */
+
+table {
+    width: 100%;
+}
+
+th, tr {
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-color: black;
+    width: 4rem;
+    height: 2rem;
+}
+
+tr{
+    background: lightblue;
+    
+}
+th{
+    background: darkblue;
+    color:rgb(238, 238, 238);
+}

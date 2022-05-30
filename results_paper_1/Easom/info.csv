@@ -1,0 +1,2 @@
+num_params,p_0_lower,p_0_upper,p_1_lower,p_1_upper,p_2_lower,p_2_upper,p_3_lower,p_3_upper,p_4_lower,p_4_upper,p_5_lower,p_5_upper,p_6_lower,p_6_upper,p_7_lower,p_7_upper,p_8_lower,p_8_upper,p_9_lower,p_9_upper,p_10_lower,p_10_upper,objective_function,dimensions,sampling,base
+11,-10.0,10.0,-10.0,10.0,-10.0,10.0,-10.0,10.0,-10.0,10.0,-10.0,10.0,-10.0,10.0,-10.0,10.0,-10.0,10.0,-10.0,10.0,-10.0,10.0,mean_objective_deficiency,2,True,True
