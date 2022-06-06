@@ -61,9 +61,10 @@ class Benchmark(_plotting.Mixin, _value.Mixin, _extremes_sample.Mixin):
         res = re.sub("\s*\-\s*\)", r")", res)
         res = re.sub("\s*\-\s*\$\s*$", r"$", res)
 
-        res = re.sub("[^\w](\()(\w\_\d)(\))", r"\g<2>", res)
-        res = re.sub("(\.0)([^\d])", r"\g<2>", res)
+        res = re.sub("[^s|n|p](\()(\w\_\d)(\))", r"\g<2>", res)
 
+        res = re.sub("(\.0)([^\d])", r"\g<2>", res)
+        res = re.sub("(\d)(\.)([^\d])", r"\g<1>\g<3>", res)
         if line_breaks:
             res = "\\begin{tabular}[c]{@{}l@{}}" + res + "\end{tabular}"
 

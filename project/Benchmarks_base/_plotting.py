@@ -38,6 +38,8 @@ class Mixin():
 
         self.check_dimensions()
 
+        steps = x_domain.shape[0]
+
         x = np.repeat(x_domain, steps)
         y = np.tile(y_domain, steps)
 

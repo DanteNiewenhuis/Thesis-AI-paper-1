@@ -1,6 +1,5 @@
 # %%
 
-from project.Benchmarks_base.benchmark import Benchmark
 import plotly.graph_objects as go
 
 import numpy as np
@@ -15,7 +14,7 @@ number = int | float | complex
 
 @dataclass
 class PPA():
-    benchmark: Benchmark
+    benchmark: list  # This is Benchmark
     pop_size: int = 30
     n_max: int = 5
 
@@ -115,8 +114,8 @@ class PPA():
 
         offspring = np.array([])
         for p, n, m in zip(self.population, num_off, mutation):
-            c = np.random.uniform(low=-0.5, high=0.5,
-                                  size=(n, self.D))*m*self.feature_range
+            c = 2 * np.random.uniform(low=-0.5, high=0.5,
+                                      size=(n, self.D))*m*self.feature_range
             p_new = p+c
 
             if len(offspring) == 0:

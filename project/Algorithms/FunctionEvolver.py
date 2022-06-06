@@ -214,9 +214,7 @@ class FunctionEvolver():
             f"value: {self.value:.5f}")
 
         for _ in pbar:
-            start = time.perf_counter()
             self.step()
-            end = time.perf_counter()
             pbar.set_postfix_str(
                 f"value: {self.value:.5f}")
 
